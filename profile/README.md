@@ -1,30 +1,30 @@
 # DASH-01
 
-DASH-01 est un robot bipède de 15 kg, construit et piloté par des étudiants de l'EPFL. Six moteurs CubeMars sont commandés en CAN par un Raspberry Pi 3B. On entraîne ses policies par apprentissage par renforcement dans MuJoCo, puis on les fait tourner sur le robot à 100 Hz.
+DASH-01 is a 15 kg biped robot built and run by EPFL students. Six CubeMars motors are driven over CAN by a Raspberry Pi 3B. Its policies are trained with reinforcement learning in MuJoCo, then run on the robot at 100 Hz.
 
-## Les repos
+## Repositories
 
-| Repo | Rôle | Statut |
+| Repo | Role | Status |
 | --- | --- | --- |
-| [`dash-sim2real`](https://github.com/Dash-organisation/dash-sim2real) | base vivante : stack robot, training, modèle du robot actuel | actif |
-| [`dash-reports`](https://github.com/Dash-organisation/dash-reports) | rapports et galeries des séries RL, vidéos, logs bruts | actif |
-| `dash-cad` | toute la CAO, les exports et les fichiers à imprimer | à venir |
-| [`DASH-01-archive`](https://github.com/Dash-organisation/DASH-01-archive) | l'ancien repo complet, avec tout son historique | archivé, lecture seule |
+| [`dash-sim2real`](https://github.com/Dash-organisation/dash-sim2real) | the living codebase: robot stack, training, model of the current robot | active |
+| [`dash-reports`](https://github.com/Dash-organisation/dash-reports) | reports and galleries of the RL series, videos, raw logs | active |
+| `dash-cad` | all the CAD, exports and files to print | coming later |
+| [`DASH-01-archive`](https://github.com/Dash-organisation/DASH-01-archive) | the complete old repo, with its full history | archived, read-only |
 
-## Tu arrives sur le projet ?
+## New to the project?
 
 1. `git clone https://github.com/Dash-organisation/dash-sim2real.git`
-2. Lis son `README.md` : installation, tests, déploiement, lancement d'une policy.
-3. Lis ensuite `docs/rl/EXPERIMENTS.md` (ce qui a été tenté en RL) et `HISTORY.md` (d'où vient le projet).
-4. Clone `dash-reports` seulement si tu veux les vidéos et les rapports, et `dash-cad` seulement pour la mécanique.
+2. Read its `README.md`: installation, tests, deployment, running a policy.
+3. Then read `docs/rl/EXPERIMENTS.md` (what has been tried in RL) and `HISTORY.md` (where the project comes from).
+4. Clone `dash-reports` only if you want the videos and reports, and `dash-cad` only for the mechanics.
 
-## État actuel (23/11/2026)
+## Current status (2026-11-23)
 
-- **Sur le robot.** La policy de tenue debout `standing04_xshape_best` tourne sur le robot à 100 Hz, avec toutes les sécurités actives.
-- **Pas encore validé : la tenue debout.** La policy laisse partir le robot vers l'avant, à cause d'un écart entre le modèle et le robot réel (−6,5° au repos).
-- **Prochaine étape** : mesurer cet écart, puis réentraîner sur un plant corrigé.
+- **On the robot.** The standing policy `standing04_xshape_best` runs on the robot at 100 Hz, with every safety check active.
+- **Not validated yet: standing.** The policy lets the robot tip forward, because of a gap between the model and the real robot (−6.5° at rest).
+- **Next step:** measure that gap, then retrain on a corrected plant.
 
 ## Contacts
 
-- Robot, stack embarquée, sim2real : Tim
-- Training RL : Léo-Paul (`leorizkallah`)
+- Robot, onboard stack, sim-to-real: Tim
+- RL training: Léo-Paul (`leorizkallah`)
