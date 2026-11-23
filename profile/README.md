@@ -9,7 +9,8 @@ DASH-01 is a 15 kg biped robot built and run by EPFL students. Six CubeMars moto
 | [`dash-sim2real`](https://github.com/Dash-organisation/dash-sim2real) | the living codebase: robot stack, training, model of the current robot | active |
 | [`dash-reports`](https://github.com/Dash-organisation/dash-reports) | reports and galleries of the RL series, videos, raw logs | active |
 | `dash-cad` | all the CAD, exports and files to print | coming later |
-| [`DASH-01-archive`](https://github.com/Dash-organisation/DASH-01-archive) | the complete old repo, with its full history | archived, read-only |
+| [`nathmo/running_robot`](https://github.com/nathmo/running_robot) | archive: Nathann's original repo, history up to 2026-09-30 | frozen |
+| [`leorizkallah/DASH-01`](https://github.com/leorizkallah/DASH-01) | archive: the continuation, October–November 2026 (Léo-Paul's RL branches) | frozen |
 
 ## New to the project?
 
